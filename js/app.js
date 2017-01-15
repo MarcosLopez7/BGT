@@ -8,7 +8,7 @@ $(window).scroll(function () {
     var $nav = $('nav');
     var $imageBT = $('div.crop-img img');
     
-    var max = 150;
+    var max = 130;
     var px = 54;
 
     if ($scrollPosition > max){

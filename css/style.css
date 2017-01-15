@@ -32,3 +32,24 @@ div.crop-img img {
     margin-top: -45px;
     margin-left: -5px;
 }
+
+/******************************************************
+SECCIÓN DE QUINES SOMOS
+******************************************************/
+
+section {
+    margin-top: 15px;
+}
+
+.w {
+    margin: 0 2.5%;
+    margin-top: 15px;
+}
+
+.w p {
+    font-size: 1.5rem;
+}
+
+.iot {
+    width: 100%;
+}
