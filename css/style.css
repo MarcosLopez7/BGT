@@ -53,3 +53,17 @@ section {
 .iot {
     width: 100%;
 }
+
+/******************************************************
+SECCIÓN DEL PORTAFOLIO DEL INDEX
+******************************************************/
+
+.card img {
+    height: 15rem;
+    background-color: gainsboro;
+    padding: 2rem;
+}
+
+.icons {
+    margin: 20px auto;
+}
