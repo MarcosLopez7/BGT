@@ -5,17 +5,16 @@
 
 $(window).scroll(function () {
     var $scrollPosition = $(window).scrollTop();
-    var $nav = $('nav');
-    var $imageBT = $('div.crop-img img');
+    var $nav = $('#fixiado');
     
     var max = 130;
     var px = 54;
 
     if ($scrollPosition > max){
-        $nav.addClass("navbar-fixed-top");
+        $nav.show();
         //$imageBT.css("height", ($imageBT.height() + px)+ "px");
     } else {
-        $nav.removeClass("navbar-fixed-top");
+        $nav.hide();
         //$imageBT.css("height", ($imageBT.height() + px) + "px");
     }
 });
