@@ -90,3 +90,29 @@ SECCIÓN DEL PORTAFOLIO DEL INDEX
     background-color: #373a3c;
     color: #fff;
 }
+
+area .row {
+    background-color: #373a3c;
+    color: #fff;
+}
+
+area button {
+    bottom: 0;
+    color: #000;
+    margin: 0 auto;
+}
+
+/*PARA QUITAR EL MAR MARGEN DE LAS IMÁGENES A 100% WIDTH*/
+.carro {
+    padding-right: 0;
+    margin-right: 0;
+}
+
+
+/*FIJAR EL HEIGHT DE LAS AREAS PARA QUE NO SE DESACOMODE LAS FILAS*/
+
+.height-card {
+
+    height: 66px;
+
+}
