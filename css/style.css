@@ -116,3 +116,9 @@ area button {
     height: 66px;
 
 }
+
+@media screen and (min-width: 1200px) {
+    porta .card img {
+        height: 279px;
+    }
+}
