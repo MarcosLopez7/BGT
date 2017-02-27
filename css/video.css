@@ -23,7 +23,7 @@ video
 {
     font-family: 'Changa One',sans-serif;
     font-weight: 100;
-    background: rgba(255, 255, 255,.1);
+    background: rgba(255, 255, 255,.5);
     color: #fff;
     padding: 2rem;
     margin: 2rem;
@@ -33,6 +33,8 @@ video
     position: absolute;
     z-index: 2;
 }
+
+
 /*
 video #bgvid
 {

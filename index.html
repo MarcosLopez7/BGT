@@ -6,146 +6,159 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css"
           integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/video.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src='//code.jquery.com/jquery-1.9.1.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 </head>
-<body>
-    <header>
-        <div class="crop-img hidden-md-up">
-            <img src="img/bgxs.png">
+<body ng-app="starterApp">
+
+<header>
+    <div class="crop-img hidden-md-up">
+        <img src="img/bgxs.png">
+    </div>
+    <nav class="navbar navbar-toggleable-sm navbar-inverse bg-inverse">
+
+        <button class="navbar-toggler hidden-md-up pull-xs-right" type="button" data-toggle="collapse"
+                data-target="#Collapse" style="color: #fff">
+            &#9776;
+        </button>
+
+        <div class="hidden-sm-down">
+            <ul class="nav navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/"><strong>Inicio</strong></a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="#somos">
+                        <strong>¿Quiénes Somos?</strong>
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#hacemos"><strong>¿Qué hacemos?</strong></a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="#porta"><strong>Portafolio</strong></a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="#contact"><strong>Contacto</strong></a>
+                </li>
+            </ul>
+
         </div>
-        <nav class="navbar navbar-toggleable-sm navbar-inverse bg-inverse">
+        <div class="collapse" id="Collapse">
+            <ul class="nav navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><strong>Inicio</strong></a>
+                </li>
 
-            <button class="navbar-toggler hidden-md-up pull-xs-right" type="button" data-toggle="collapse"
-                        data-target="#Collapse" style="color: #fff">
-                &#9776;
-            </button>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#somos">
+                        <strong>¿Quiénes Somos?</strong>
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#hacemos"><strong>¿Qué hacemos?</strong></a>
+                </li>
 
-            <div class="hidden-sm-down">
-                <ul class="nav navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/"><strong>Inicio</strong></a>
-                    </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#porta"><strong>Portafolio</strong></a>
+                </li>
 
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">
-                            <strong>¿Quiénes Somos?</strong>
-                        </a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#"><strong>¿Qué hacemos?</strong></a>
-                    </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#contact"><strong>Contacto</strong></a>
+                </li>
+            </ul>
+        </div>
 
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#"><strong>Portafolio</strong></a>
-                    </li>
+    </nav>
 
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#"><strong>Contacto</strong></a>
-                    </li>
-                </ul>
+    <nav class="navbar navbar-toggleable-sm navbar-inverse bg-inverse navbar-fixed-top" id="fixiado">
 
-            </div>
-            <div class="collapse" id="Collapse">
-                <ul class="nav navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#"><strong>Inicio</strong></a>
-                    </li>
+        <button class="navbar-toggler hidden-md-up pull-xs-right" type="button" data-toggle="collapse"
+                data-target="#Collapsef" style="color: #fff">
+            &#9776;
+        </button>
 
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">
-                            <strong>¿Quiénes Somos?</strong>
-                        </a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#"><strong>¿Qué hacemos?</strong></a>
-                    </li>
+        <div class="hidden-sm-down">
+            <ul class="nav navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/"><strong>Inicio</strong></a>
+                </li>
 
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#"><strong>Portafolio</strong></a>
-                    </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#somos">
+                        <strong>¿Quiénes Somos?</strong>
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#hacemos"><strong>¿Qué hacemos?</strong></a>
+                </li>
 
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#"><strong>Contacto</strong></a>
-                    </li>
-                </ul>
-            </div>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#porta"><strong>Portafolio</strong></a>
+                </li>
 
-        </nav>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#contact"><strong>Contacto</strong></a>
+                </li>
+            </ul>
 
-        <nav class="navbar navbar-toggleable-sm navbar-inverse bg-inverse navbar-fixed-top" id="fixiado">
+        </div>
+        <div class="collapse" id="Collapsef">
+            <ul class="nav navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><strong>Inicio</strong></a>
+                </li>
 
-            <button class="navbar-toggler hidden-md-up pull-xs-right" type="button" data-toggle="collapse"
-                    data-target="#Collapsef" style="color: #fff">
-                &#9776;
-            </button>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#somos">
+                        <strong>¿Quiénes Somos?</strong>
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#hacemos"><strong>¿Qué hacemos?</strong></a>
+                </li>
 
-            <div class="hidden-sm-down">
-                <ul class="nav navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/"><strong>Inicio</strong></a>
-                    </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#porta"><strong>Portafolio</strong></a>
+                </li>
 
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">
-                            <strong>¿Quiénes Somos?</strong>
-                        </a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#"><strong>¿Qué hacemos?</strong></a>
-                    </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#contact"><strong>Contacto</strong></a>
+                </li>
+            </ul>
+        </div>
 
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#"><strong>Portafolio</strong></a>
-                    </li>
+    </nav>
+</header>
 
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#"><strong>Contacto</strong></a>
-                    </li>
-                </ul>
+<div class="embed-responsive embed-responsive-16by9">
+    <video autoplay loop id="bgvid">
+        <source src="video/binario.mp4" type="video/mp4">
+        <!--<source src="video/binario.ogg" type="video/ogg">-->
+    </video>
+    <div id="overlay" class="hidden-sm-down">
+        <img src="../img/bgxs.png">
+    </div>
+</div>
 
-            </div>
-            <div class="collapse" id="Collapsef">
-                <ul class="nav navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#"><strong>Inicio</strong></a>
-                    </li>
-
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">
-                            <strong>¿Quiénes Somos?</strong>
-                        </a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#"><strong>¿Qué hacemos?</strong></a>
-                    </li>
-
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#"><strong>Portafolio</strong></a>
-                    </li>
-
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#"><strong>Contacto</strong></a>
-                    </li>
-                </ul>
-            </div>
-
-        </nav>
-    </header>
-
-    <section>
+<section>
         <div class="w">
-            <h1 class="text-xs-center">¿Quiénes Somos?</h1>
+            <h1 class="text-xs-center" id="somos">¿Quiénes Somos?</h1>
             <p class="text-justify">
                 Somos una empresa creativa e innovadora, que integra las más novedosas tendencias tecnológicas para
                 proveer servicios de ingeniería y brindar soluciones excepcionales, acercando a nuestros clientes a la
                 industria 4.0 en México y el mundo.
             </p>
         </div>
-        <img src="img/IoT.png" class="iot">
+        <img src="img/IoT.png" class="iot carro">
         <div class="w">
-            <h1 class="text-xs-center">¿Qué Hacemos?</h1>
+            <h1 class="text-xs-center" id="hacemos">¿Qué Hacemos?</h1>
             <p class="text-justify">
                 Aprovechando las nuevas tecnologías y el conocimiento experto de nuestro equipo, brindamos soluciones
                 y servicios de ingeniería en los sectores más importantes de la industria, integrando y desarrollando
@@ -153,72 +166,28 @@
             </p>
         </div>
 
-        <h1 class="text-xs-center">Portafolio</h1>
-
-        <div class="row">
-            <div class="card icons col-xs-10 offset-xs-1 col-sm-4 offset-sm-1">
-                <img class="card-img-top" src="img/icons/redes.png" alt="Card image cap">
-                <div class="card-block">
-                    <h4 class="card-title">Redes</h4>
-                    <p class="card-text">Aquí yo digo que sé de redes.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-
-            <div class="card icons col-xs-10 offset-xs-1 col-sm-4 offset-sm-2" >
-                <img class="card-img-top" src="img/icons/web.png" alt="Card image cap">
-                <div class="card-block">
-                    <h4 class="card-title">Desarrollo Web</h4>
-                    <p class="card-text">Aquí yo digo que sé programar web.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-
-            <div class="card icons col-xs-10 offset-xs-1 col-sm-4 offset-sm-1">
-                <img class="card-img-top" src="img/icons/mobile.png" alt="Card image cap">
-                <div class="card-block">
-                    <h4 class="card-title">Desarrollo Móvil</h4>
-                    <p class="card-text">Aquí yo digo que sé programar aplicaciones móvi.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-
-            <div class="card icons col-xs-10 offset-xs-1 col-sm-4 offset-sm-2">
-                <img class="card-img-top" src="img/icons/enge.png">
-                <div class="card-block">
-                    <h4 class="card-title">Ingeniería de software</h4>
-                    <p class="card-text">Aquí yo digo que sé diseñar software.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card icons col-xs-10 offset-xs-1 col-sm-4 offset-sm-1" >
-                <img class="card-img-top" src="img/icons/pm.png" alt="Card image cap">
-                <div class="card-block">
-                    <h4 class="card-title">Project Management</h4>
-                    <p class="card-text">Aquí Isaac y yo somos unas balas</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card icons col-xs-10 offset-xs-1 col-sm-4 offset-sm-2">
-                <img class="card-img-top" src="img/icons/dron.png">
-                <div class="card-block">
-                    <h4 class="card-title">Drones</h4>
-                    <p class="card-text">Isaac sabe hacer drones</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card icons col-xs-10 offset-xs-1 col-sm-4 offset-sm-1" >
-                <img class="card-img-top" src="img/icons/robot.png" alt="Card image cap">
-                <div class="card-block">
-                    <h4 class="card-title">Robots</h4>
-                    <p class="card-text">Programar robots</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
+    <div ng-controller="portaController" id="porta">
+        <porta ng-hide="watching"></porta>
+        <area class="m-t-2" ng-show="watching"></area>
+    </div>
     </section>
 
-    <footer class="text-xs-center m-t-3">
+    <div class="row contact p-t-3 p-b-3 carro">
+        <div class="col-xs-12 col-md-6">
+            <h2 class="text-xs-center">Contacto para TI</h2>
+            <p class="text-xs-center">
+                Escribenos a: marcos.lopez@bytesandgears.com
+            </p>
+        </div
+        <div class="col-xs-12 col-md-6" id="contact">
+            <h2 class="text-xs-center">Contacto para IMT</h2>
+            <p class="text-xs-center">Escribenos a: isaac.gonzalez@bytesandgears.com</p>
+        </div>
+
+        <div class="col-xs-12 text-xs-center m-t-2">Toluca de Lerdo y Ciudad de México</div>
+    </div>
+
+    <footer class="text-xs-center m-t-3" id="contact">
         &copy; 2017 Bytes & Gears Technologies.
     </footer>
 
@@ -231,6 +200,12 @@
             crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js"
             integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
-    <script src="js/app.js"></script>
+    <script src="js/jQuery/app.js"></script>
+    <script src="js/Angular/app.js"></script>
+    <script src="js/Angular/controllers/portafolio.js"></script>
+    <script src="js/Angular/directives/portafolio.js"></script>
+    <script src="js/Angular/directives/menu.js"></script>
+    <script src="js/Angular/directives/area.js"></script>
+    <script src="js/Angular/factory/portafolio.js"></script>
 </body>
 </html>
