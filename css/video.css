@@ -23,17 +23,22 @@ video
 {
     font-family: 'Changa One',sans-serif;
     font-weight: 100;
-    background: rgba(255, 255, 255,.5);
+    /*background: rgba(255, 255, 255,.5);*/
     color: #fff;
     /*padding: 2rem;*/
     display: block;
-    margin: 0 auto;
+    margin: 13% 28%;
     /*float: right;*/
     font-size: 1.2rem;
     position: absolute;
     z-index: 2;
 }
 
+#overlay img {
+    width: 170%;
+    background: rgba(255, 255, 255, .4);
+    border-radius: 10%;
+}
 
 /*
 video #bgvid
