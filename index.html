@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Bytes & Gears</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300,400italic|Changa+One' rel='stylesheet'
+          type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css"
           integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -143,12 +145,12 @@
         <!--<source src="video/binario.ogg" type="video/ogg">-->
     </video>
     <div id="overlay" class="hidden-sm-down">
-        <img src="../img/bgxs.png">
+        <img src="img/bgxs.png">
     </div>
 </div>
 
 <section>
-        <div class="w">
+        <div class="w hidden-lg-up">
             <h1 class="text-xs-center" id="somos">¿Quiénes Somos?</h1>
             <p class="text-justify">
                 Somos una empresa creativa e innovadora, que integra las más novedosas tendencias tecnológicas para
@@ -156,8 +158,29 @@
                 industria 4.0 en México y el mundo.
             </p>
         </div>
-        <img src="img/IoT.png" class="iot carro">
-        <div class="w">
+        <div class="hidden-md-down" id="overIoT">
+            <img src="img/IoT.png" class="iot carro">
+            <div class="overIoT p-t-3">
+                <div class="col-lg-10 offset-lg-1">
+                <h1 class="text-xs-center">¿Quiénes Somos?</h1>
+                <p class="text-justify m-t-1 p-l-2" style="font-size: 1.5rem">
+                    Somos una empresa creativa e innovadora, que integra las más novedosas tendencias tecnológicas para
+                    proveer servicios de ingeniería y brindar soluciones excepcionales, acercando a nuestros clientes a la
+                    industria 4.0 en México y el mundo.
+                </p>
+                </div>
+                <div class="col-lg-10 offset-lg-1 m-t-2">
+                    <h1 class="text-xs-center">¿Qué Hacemos?</h1>
+                    <p class="text-justify m-t-1 p-r-2" style="font-size: 1.5rem">
+                        Aprovechando las nuevas tecnologías y el conocimiento experto de nuestro equipo, brindamos soluciones
+                        y servicios de ingeniería en los sectores más importantes de la industria, integrando y desarrollando
+                        sistemas dedicados a las necesidades del mercado.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="img/IoT.png" class="iot carro hidden-lg-up">
+        <div class="w hidden-lg-up">
             <h1 class="text-xs-center" id="hacemos">¿Qué Hacemos?</h1>
             <p class="text-justify">
                 Aprovechando las nuevas tecnologías y el conocimiento experto de nuestro equipo, brindamos soluciones
@@ -166,20 +189,20 @@
             </p>
         </div>
 
-    <div ng-controller="portaController" id="porta">
+    <div ng-controller="portaController" id="porta" class="m-t-2">
         <porta ng-hide="watching"></porta>
         <area class="m-t-2" ng-show="watching"></area>
     </div>
     </section>
 
-    <div class="row contact p-t-3 p-b-3 carro">
+    <div class="row contact p-t-3 p-b-3 carro" id="contact">
         <div class="col-xs-12 col-md-6">
             <h2 class="text-xs-center">Contacto para TI</h2>
             <p class="text-xs-center">
                 Escribenos a: marcos.lopez@bytesandgears.com
             </p>
-        </div
-        <div class="col-xs-12 col-md-6" id="contact">
+        </div>
+        <div class="col-xs-12 col-md-6" class="contact">
             <h2 class="text-xs-center">Contacto para IMT</h2>
             <p class="text-xs-center">Escribenos a: isaac.gonzalez@bytesandgears.com</p>
         </div>
@@ -187,7 +210,7 @@
         <div class="col-xs-12 text-xs-center m-t-2">Toluca de Lerdo y Ciudad de México</div>
     </div>
 
-    <footer class="text-xs-center m-t-3" id="contact">
+    <footer class="text-xs-center m-t-3">
         &copy; 2017 Bytes & Gears Technologies.
     </footer>
 
